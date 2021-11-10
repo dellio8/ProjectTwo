@@ -1,0 +1,126 @@
+<html>
+<head>
+<title> Project 2 Gallery</title>
+</head>
+
+         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+ 
+
+ <body>
+
+   <div class="rectangle"></div>
+
+    <div class="navbar"> 
+    
+    <a class="index" href="index.html">Home</a>
+
+        <a class="about" href="about.html">About</a>
+
+       <a class="award" href="awards.html">Awards</a>
+
+
+
+   </div>
+
+    <h1 class="pizza">Gallery</h1>
+
+    <div class="bb"></div>
+    <div class="ww"></div>
+    <div class="rr"></div>
+
+
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="images/gmm.jpeg">
+    <div class="text">"GM Swiss Design Poster." </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="images/ha.jpeg" >
+    <div class="text">"TELL." </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="images/hand.jpeg" >
+    <div class="text">"63/64 Stadttheater Basel."</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="images/st.jpeg" >
+    <div class="text">"Stadttheater Basel." </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="images/Gis.jpeg" >
+    <div class="text">"Giselle Poster." </div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+   <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+</body>
+</html>
+
+   <!-- The dots/circles 
+    <img class="cheese" src="images/gmm.jpeg" alt="space"  height="370"> 
+
+    <img class="pepp" src="images/ha.jpeg" alt="space"  height="370"> 
+
+    <img class="sauce" src="images/hand.jpeg" alt="space"  height="370"> 
+
+    <img class="crust" src="images/st.jpeg" alt="space"  height="370"> 
+
+    <img class="garlic" src="images/Gis.jpeg" alt="space"  height="370"> 
+ </div></del> -->

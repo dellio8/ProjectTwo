@@ -1,0 +1,583 @@
+
+html, body
+{
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+	body{
+		background-image:url("../images/background.png") ;
+		background-size: cover;
+	
+	}
+
+.contain{
+		
+	background-color: #1F1D1D ;
+	position: absolute;
+	}
+
+.navbar{
+		display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 20px);
+	font-size: 200%;
+	position: relative;
+	padding: 15px;
+	z-index: 1;
+	}
+
+	.navbar a{
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: 0.8s;
+		color:#E2E2E2;
+		font-family: 'Lato 700',sans-serif;
+		font-weight: 900;
+
+	}
+	.navbar a:hover{
+		color:#BE343C;
+		font-family: 'Lato 700',sans-serif;
+		font-size: 205%;
+
+	}
+
+	.container{ height:0vh;
+	background-color:rgba(0, 0, 0,.75); }
+
+
+	.smurf{
+		background: #E2E2E2 ;
+		position: absolute;
+		top: 190px;
+		left: 85px;
+		width: 100px;
+		height: 100px;
+		z-index: -1;
+	}
+
+	.manbearpig{
+		position: absolute;
+		background: #BE343C ;
+		left: 1600px;
+		top: 820px;
+		width: 300px;
+		height: 300px;
+		z-index: -1;
+	}
+
+	.VeryCoolKanye{
+		position: absolute;
+		background: #1F1D1D ;
+		left: 600px;
+		top: 450px;
+		width: 375px;
+		height: 375px;
+		z-index: -1;
+	}
+	.rectangle{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 1800px;
+		height: 75px;
+		background: #1F1D1D ;
+	}
+
+
+	.redc { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 45px;
+    margin-top: 2px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.blackc { 
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.whitec { 
+    animation-name: floating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+	.turtle{ 
+		background-image: url(../images/hometext2.jpg);
+		background-repeat: repeat;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #E2E2E2;
+	 	font-family:'Lato 700', sans-serif;
+	 	font-size: 100px;
+	 	text-transform: uppercase;
+	 	-webkit-font-smoothing: antialiased;
+	 	position: absolute;
+	 	top: 385px;
+	 	left: 710px;
+	 	z-index: 5;
+	 	cursor:default;
+	}
+
+	.picture{
+		position: absolute;
+	 	top: 350px;
+	 	left: 100px;
+	 	cursor: ;
+
+	}
+
+	.to{
+		position: absolute;
+		left: 900px;
+		top: 400px;
+		transition:filter .5s ease-in; 
+
+	}
+
+	.to:hover{ filter: grayscale(100%);}
+
+	.guppie{
+		position: absolute;
+	 	top: 600px;
+	 	left: 440px;
+	 	width: 20%;
+
+	}
+	.guppie p{
+		color: #E2E2E2;
+ 		font-family:'Lato 400', sans-serif;
+	 	font-size: 15px;
+	 	padding: 33px;
+	 	background-color: #1F1D1D;
+	 
+
+	}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  top: 200px;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+	width:40%;
+	position: relative;
+	top: 20%;
+	left: 30%;
+	margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #E2E2E2;
+  font-family:'Lato 700', sans-serif;
+  background-color:#1F1D1D ;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  left: 38.8%;
+  width: 20%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc)*/ 
+	.numbertext {
+  color: #E2E2E2;
+  font-family:'Lato 400', sans-serif;
+  font-size: 12px;
+  padding: 8px 12px;
+  position:absolute;
+  left: 35%;
+  top: 0;
+} 
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  top: 200px;
+}
+
+.active, .dot:hover {
+  background-color: #E2E2E2;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+	.solidsnake{
+
+		color: #E2E2E2;
+	 	font-family:'Lato 700', sans-serif;
+	 	font-size: 120px;
+	 	position: absolute;
+	 	top: 200px;
+	 	left: 353px;
+	 	transition: 0.8s;
+	 	cursor: default;
+	}
+	.solidsnake:hover{color:#BE343C}
+
+	.bbox{background-color: #1F1D1D;
+		position: absolute;
+		top: 300px;
+		left: 950px;
+		width: 600px;
+		height: 600px;
+		z-index: -1;
+		}
+
+
+	.wbox{background-color: #1F1D1D;
+		position: absolute;
+		top: 175px;
+		left: 500px;
+		width: 300px;
+		height: 300px;
+		z-index: -1;
+		}
+
+		.wbox{ 
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 45px;
+    margin-top: 3px;
+}
+
+
+	.rbox{background-color: #1F1D1D;
+		position: absolute;
+		top: 505px;
+		left: 415px;
+		width: 450px;
+		height: 450px;
+		z-index: -1;
+		}
+
+
+	.wboxt{
+		color: #E2E2E2;
+	 position: absolute;
+		top: 605px;
+		left: 415px;
+		width: 170px;
+		height: 170px;
+		z-index: 1;
+		}
+
+	
+
+	.square{
+		width: 100px;
+		height: 100px;
+		top: 200px;
+		left: 900px;
+		background:#E2E2E2 ;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.square{ 
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-right: 100px;
+    margin-top: 3px;
+}
+
+.squaret{
+		width: 100px;
+		height: 100px;
+		top: 850px;
+		left: 1500px;
+		background:#E2E2E2 ;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.squaret{ 
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-right: 100px;
+    margin-top: 3px;
+}
+
+
+
+
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 50px);
+}
+
+/*.containerphoto{
+	display: grid;
+	align-content: center;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 25px);
+
+}*/
+	.redc {
+		background-color: #E2E2E2;
+		color: whitesmoke;
+		position: absolute;
+		left: 1500px;
+		top: 800px;
+		width: 150px;
+		height: 150px;
+		font-size: 400%;
+		border-radius: 50%;
+		
+	}
+
+
+
+	.blackc{
+		background-color: #BE343C;
+		position: absolute;
+		top: 250px;
+		left: 650px;
+		width: 600px;
+		height: 600px;
+		z-index: -1;
+		border-radius: 50%;
+
+	}
+	
+
+	.whitec {
+		background-color: #1F1D1D;
+		color: whitesmoke;
+		position: absolute;
+		top: 200px;
+		left: 100px;
+		width: 300px;
+		height: 300px;
+		z-index: -1;
+		border-radius: 50%;
+	}
+		
+	.pizza{
+		color: #1F1D1D;
+	 	font-family:'Lato 700', sans-serif;
+	 	font-size: 120px;
+	 	text-transform: uppercase;
+	 	position: absolute;
+	 	top: 90px;
+	 	left:65px;
+	 	transition: 0.8s;
+	 	cursor: default;	
+	 	z-index: 1;
+	 	width: 25%;
+	 	
+
+	}
+
+	.pizza:hover{color:#E2E2E2}
+
+	.rr{
+		width: 390px;
+		height: 200px;
+		top: 125px;
+		left: 50px;
+		background:#BE343C ;
+		position: absolute;
+		z-index: -1;
+	}
+
+
+	.cow {
+		color: #BE343C;
+		font-family:'Lato 700', sans-serif;
+	 	font-size: 120px;
+	 	position: absolute;
+	 	top: 290px;
+	 	left: 1000px;
+	 	z-index: 1;
+	 	transition: 0.8s;
+	 	cursor:default;
+	}
+
+	.cow:hover{color:#1F1D1D}
+	
+
+	.moo{
+		position: absolute;
+		top: 200px;
+		left: 515px;
+		/*width: 150px;
+		height: 150px;*/
+		border-radius: 50%;
+
+	}
+
+	.awrcircle{
+		background-color: #BE343C;
+		color: whitesmoke;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: 350px;
+		left: 200px;
+		border-radius: 50%;
+		z-index: -1;
+		
+		
+
+	}
+
+	.awrcircle{ 
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 45px;
+    margin-top: 3px;
+}
+ 
+ 	 		
+ 	 .awwcircle{
+ 	 	background-color: #E2E2E2;
+		color: whitesmoke;
+		width: 900px;
+		height: 900px;
+		position: absolute;
+		top: 200px;
+		left: 800px;
+		border-radius: 50%;
+
+ 	 }
+
+   					
+
+   	.awbcircle{
+   		background-color: #1F1D1D;
+		color: whitesmoke;
+		width: 360px;
+		height: 360px;
+		position: absolute;
+		top: 400px;
+		left: 300px;
+		border-radius: 50%;
+		z-index: -1;
+
+
+   	}
+
+   	.awbcircle{ 
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 45px;
+    margin-top: 3px;
+}
+
+.fishpaste{
+	 	position: absolute;
+	 	top: 550px;
+	 	left: 1000px;
+	 	width: 32%;
+
+}
+ 	.fishpaste li{
+ 		color: #1F1D1D;
+ 		font-family:'Lato 400', sans-serif;
+	 	font-size: 29px;
+ 	}
